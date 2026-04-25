@@ -31,7 +31,6 @@ export default function AboutUs() {
           <h2 className="text-4xl md:text-6xl font-black text-charcoal uppercase tracking-tighter mb-4">
             ЗАЩО ДА <span className="text-teal">ИЗБЕРЕТЕ</span> НАС?
           </h2>
-          <div className="h-1 w-20 bg-accent mx-auto"></div>
         </div>
 
         {/* Stats Grid */}

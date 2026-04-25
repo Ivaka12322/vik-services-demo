@@ -53,7 +53,7 @@ export default function Services() {
       <div className="absolute inset-0 opacity-5 grid-pattern pointer-events-none"></div>
       
       {/* Fade into the next section (white) */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
 
       <div className="container-wide px-4 relative z-10">
         <div className="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -82,16 +82,13 @@ export default function Services() {
                 className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url('${service.image}')` }}
               ></div>
-              <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90 z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/70 z-10"></div>
               
               <div className="relative z-20 h-full flex flex-col">
                 <div className="flex justify-between items-start mb-auto">
                   <div className="w-12 h-12 bg-teal/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-teal group-hover:bg-teal group-hover:text-white transition-all duration-500">
                     <service.icon className="w-6 h-6" />
                   </div>
-                  <span className="text-4xl font-black text-white/20 select-none group-hover:text-white/40 transition-colors">
-                    {service.num}
-                  </span>
                 </div>
                 
                 <h3 className="text-xl font-black text-white mb-2 uppercase tracking-tight">

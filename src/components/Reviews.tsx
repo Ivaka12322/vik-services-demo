@@ -22,13 +22,12 @@ const testimonials = [
 export default function Reviews() {
   return (
     <section id="reviews" className="bg-white pt-24 pb-8 md:pb-10 overflow-hidden relative">
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-slate-50 to-transparent pointer-events-none z-0"></div>
+      <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-slate-50 to-transparent pointer-events-none z-0"></div>
       <div className="container-wide px-4">
         <div className="mb-10">
           <h2 className="text-3xl md:text-5xl font-black text-charcoal uppercase tracking-tighter leading-none mb-4">
             КАКВО КАЗВАТ <br /><span className="text-teal">КЛИЕНТИТЕ</span>
           </h2>
-          <div className="h-1.5 w-40 bg-teal"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

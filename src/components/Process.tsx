@@ -15,7 +15,6 @@ export default function Process() {
           <h2 className="text-3xl md:text-5xl font-black text-charcoal uppercase tracking-tighter leading-none mb-4">
             ПРОЦЕС НА <br /><span className="text-accent">РАБОТА</span>
           </h2>
-          <div className="h-1.5 w-40 bg-charcoal"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

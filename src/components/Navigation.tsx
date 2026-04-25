@@ -54,7 +54,6 @@ export default function Navigation() {
             <span className="text-xl font-black text-charcoal tracking-tighter leading-none">
               ВиК СОФИЯ
             </span>
-            <span className="text-[10px] font-bold text-accent tracking-[0.2em]">ПРОФЕСИОНАЛИСТИ</span>
           </div>
         </div>
 
@@ -117,7 +116,7 @@ export default function Navigation() {
               <div className="h-2 w-20 bg-teal mt-4"></div>
               <a
                 href="tel:+359897777224"
-                className="text-xl font-bold text-coral underline underline-offset-8 mt-4"
+                className="inline-block bg-teal text-white text-center py-5 rounded-2xl text-xl font-black uppercase tracking-widest mt-4 shadow-xl active:scale-95 transition-all"
               >
                 +359 897 777 224
               </a>
