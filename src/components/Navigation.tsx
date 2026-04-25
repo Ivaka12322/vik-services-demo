@@ -14,6 +14,17 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const navLinks = [
     { name: 'УСЛУГИ', href: '#services' },
     { name: 'ПРОЕКТИ', href: '#projects' },
@@ -75,7 +86,7 @@ export default function Navigation() {
 
         {/* Mobile Toggle Bubble */}
         <button
-          className="md:hidden w-12 h-12 bg-white rounded-full shadow-lg border-2 border-teal flex items-center justify-center text-charcoal z-[60]"
+          className="md:hidden w-12 h-12 bg-white rounded-full shadow-lg border-2 border-teal flex items-center justify-center text-charcoal z-[101]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -86,11 +97,11 @@ export default function Navigation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-0 bg-charcoal z-50 flex flex-col justify-center p-10 md:hidden"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 bg-charcoal z-[100] flex flex-col justify-center p-10 md:hidden h-screen"
           >
             <div className="flex flex-col gap-8">
               {navLinks.map((link) => (
