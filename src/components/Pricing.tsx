@@ -6,30 +6,28 @@ const pricingTiers = [
     title: 'ОСНОВНИ УСЛУГИ',
     color: 'border-teal',
     items: [
-      { name: 'Посещение и диагностика', price: '30 лв' },
-      { name: 'Смяна на водомер', price: 'от 40 лв' },
-      { name: 'Монтаж смесител', price: 'от 50 лв' },
-      { name: 'Монтаж мивка', price: 'от 60 лв' },
+      { name: 'ДИАГНОСТИКА', price: '30 лв' },
+      { name: 'СМЯНА ВОДОМЕР', price: 'от 40 лв' },
+      { name: 'МЕСИТЕЛ / МИВКА', price: 'от 50 лв' },
     ]
   },
   {
     title: 'СПЕЦИАЛИЗИРАНИ',
     color: 'border-teal',
     items: [
-      { name: 'Вертикален щранг', price: 'По запитв.' },
-      { name: 'Хоризонтален щранг', price: 'По запитв.' },
-      { name: 'Отпушване на канали', price: 'от 70 лв' },
-      { name: 'Монтаж бойлер', price: 'от 80 лв' },
+      { name: 'ВЕРТ. ЩРАНГ', price: 'По запитв.' },
+      { name: 'ХОРИЗ. ЩРАНГ', price: 'По запитв.' },
+      { name: 'ОТПУШВАНЕ', price: 'от 70 лв' },
+      { name: 'МОНТАЖ БОЙЛЕР', price: 'от 80 лв' },
     ]
   },
   {
     title: 'СПЕШНИ / 24X7',
     color: 'border-t-8 border-coral',
     items: [
-      { name: 'Авария през нощта', price: 'от 100 лв' },
-      { name: 'Спешен оглед', price: 'от 50 лв' },
-      { name: 'Ремонт на течове', price: 'от 90 лв' },
-      { name: 'Бърза реакция', price: 'Included' },
+      { name: 'НОЩНА АВАРИЯ', price: 'от 100 лв' },
+      { name: 'СПЕШЕН ОГЛЕД', price: 'от 50 лв' },
+      { name: 'РЕМОНТ ТЕЧ', price: 'от 90 лв' },
     ]
   }
 ];
@@ -44,7 +42,7 @@ export default function Pricing() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:w-[40%]"
+            className="lg:w-[40%] text-center lg:text-left w-full"
           >
             <span className="text-teal text-xs font-black tracking-[0.4em] mb-4 block uppercase leading-none">
               ПРОЗРАЧНИ ЦЕНИ
@@ -52,7 +50,7 @@ export default function Pricing() {
             <h2 className="text-3xl md:text-5xl font-black text-charcoal leading-none uppercase tracking-tighter mb-4">
               ПРОЗРАЧНИ <br /><span className="text-teal">ЦЕНОВИ</span> ЛИСТИ
             </h2>
-            <p className="text-steel text-sm font-bold mb-6 max-w-sm">
+            <p className="text-charcoal/70 text-sm font-bold mb-6 max-w-sm mx-auto lg:mx-0">
               Вярваме в честността. Крайната оферта се изготвя само след безплатен оглед и оценка на щетите.
             </p>
             
@@ -73,7 +71,7 @@ export default function Pricing() {
           </motion.div>
 
           {/* Right Side (60%) */}
-          <div className="lg:w-[60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="lg:w-[60%] flex flex-wrap justify-center lg:grid lg:grid-cols-3 gap-3 md:gap-4 w-full">
             {pricingTiers.map((tier, index) => (
               <motion.div
                 key={tier.title}
@@ -81,16 +79,16 @@ export default function Pricing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className={`bg-white p-6 rounded-3xl border-t-8 ${tier.color} shadow-sm group hover:shadow-xl transition-all duration-300`}
+                className={`bg-white p-4 md:p-6 rounded-3xl border-t-8 ${tier.color} shadow-sm group hover:shadow-xl transition-all duration-300 text-center w-[calc(50%-0.5rem)] md:w-[calc(48%-1rem)] lg:w-full`}
               >
-                <h3 className="text-xs font-black text-teal tracking-[0.2em] mb-6 border-b border-sand pb-4">
+                <h3 className="text-[9px] md:text-xs font-black text-teal tracking-normal md:tracking-[0.2em] mb-6 border-b border-sand pb-4 uppercase">
                   {tier.title}
                 </h3>
                 <div className="space-y-4 mb-6">
                   {tier.items.map((item) => (
                     <div key={item.name} className="flex flex-col">
-                      <span className="text-[10px] font-bold text-steel uppercase tracking-widest">{item.name}</span>
-                      <span className="text-base font-black text-charcoal">{item.price}</span>
+                      <span className="text-[10px] md:text-[11px] font-bold text-charcoal/80 uppercase tracking-widest leading-tight">{item.name}</span>
+                      <span className="text-sm md:text-base font-black text-charcoal">{item.price}</span>
                     </div>
                   ))}
                 </div>
