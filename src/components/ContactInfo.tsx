@@ -18,7 +18,7 @@ export default function ContactInfo() {
             <h2 className="text-3xl md:text-5xl font-black text-white leading-none uppercase tracking-tighter mb-6">
               ГОТОВИ ЛИ СТЕ <br /><span className="text-teal">ДА ЗАПОЧНЕМ?</span>
             </h2>
-            <p className="text-sand/70 text-sm font-medium max-w-sm mb-8">
+            <p className="text-slate-400 text-sm font-medium max-w-sm mb-8">
               Свържете се с нас за безплатна консултация и оглед на място в рамките на София и региона.
             </p>
             
@@ -27,20 +27,20 @@ export default function ContactInfo() {
                 <div className="w-10 h-10 bg-teal/20 rounded-xl flex items-center justify-center text-teal">
                   <MapPin className="w-4 h-4" />
                 </div>
-                <span className="text-xs font-black uppercase tracking-widest text-sand/80">гр. София, България</span>
+                <span className="text-xs font-black uppercase tracking-widest text-slate-300">гр. София, България</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 bg-teal/20 rounded-xl flex items-center justify-center text-teal">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-xs font-black uppercase tracking-widest leading-none text-sand/80">office@vik-sofia.com</span>
+                <span className="text-xs font-black uppercase tracking-widest leading-none text-slate-300">office@vik-sofia.com</span>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Right Side (Sand) */}
-        <div className="lg:w-1/2 bg-sand p-8 md:p-12 flex flex-col justify-center relative overflow-hidden">
+        {/* Right Side (Light Surface) */}
+        <div className="lg:w-1/2 bg-slate-50 p-8 md:p-12 flex flex-col justify-center relative overflow-hidden">
           {/* Subtle Grid Pattern */}
           <div className="absolute inset-0 opacity-10 grid-pattern pointer-events-none"></div>
 
@@ -50,10 +50,10 @@ export default function ContactInfo() {
             viewport={{ once: true }}
             className="text-center lg:text-left relative z-10"
           >
-            <p className="text-xs font-black text-charcoal/50 uppercase tracking-[0.3em] mb-4">ОБАДЕТЕ СЕ СЕГА</p>
+            <p className="text-xs font-black text-slate-500 uppercase tracking-[0.3em] mb-4">ОБАДЕТЕ СЕ СЕГА</p>
             <a 
               href="tel:+359897777224" 
-              className="text-3xl md:text-5xl lg:text-6xl font-black text-coral hover:text-teal transition-all tracking-tighter leading-none block mb-6"
+              className="text-3xl md:text-5xl lg:text-6xl font-black text-accent hover:text-teal transition-all tracking-tighter leading-none block mb-6"
             >
               +359 897 777 224
             </a>
@@ -63,9 +63,6 @@ export default function ContactInfo() {
           </motion.div>
         </div>
       </div>
-      
-      {/* Bottom Technical Line */}
-      <div className="h-6 bg-teal"></div>
     </section>
   );
 }

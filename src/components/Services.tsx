@@ -48,9 +48,12 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-charcoal py-8 md:py-10 relative overflow-hidden">
+    <section id="services" className="bg-charcoal pt-8 md:pt-10 pb-20 relative overflow-hidden">
       {/* Decorative Grid */}
       <div className="absolute inset-0 opacity-5 grid-pattern pointer-events-none"></div>
+      
+      {/* Fade into the next section (white) */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
 
       <div className="container-wide px-4 relative z-10">
         <div className="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-6">

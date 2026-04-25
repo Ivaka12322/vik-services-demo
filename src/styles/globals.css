@@ -2,11 +2,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-teal: #0FA4AF; /* Bright Teal from image */
-  --color-charcoal: #003135; /* Darkest Navy from image */
-  --color-sand: #AFDDE5; /* Lightest Blue background from image */
-  --color-coral: #964734; /* Warm Rust/Terracotta from image */
-  --color-steel: #508085; /* Refined secondary text color for better visibility */
+  --color-teal: #0FA4AF;
+  --color-charcoal: #003135;
+  --color-sand: #F8FAFC; /* Clean off-white */
+  --color-accent: #0047AB; /* Deep Royal Blue replacing coral/brown */
+  --color-coral: #0047AB; /* Fallback for existing coral classes */
+  --color-steel: #475569;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", "Space Grotesk", sans-serif;
@@ -23,7 +24,11 @@ html {
 }
 
 body {
-  @apply font-sans bg-sand text-charcoal antialiased overflow-x-hidden m-0;
+  @apply font-sans bg-white text-charcoal antialiased overflow-x-hidden m-0;
+}
+
+section {
+  transition: background-color 0.5s ease-in-out;
 }
 
 h1, h2, h3, h4, .font-display {

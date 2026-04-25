@@ -21,7 +21,8 @@ const testimonials = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="bg-white py-8 md:py-10 overflow-hidden">
+    <section id="reviews" className="bg-white pt-24 pb-8 md:pb-10 overflow-hidden relative">
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-slate-50 to-transparent pointer-events-none z-0"></div>
       <div className="container-wide px-4">
         <div className="mb-10">
           <h2 className="text-3xl md:text-5xl font-black text-charcoal uppercase tracking-tighter leading-none mb-4">
@@ -38,13 +39,13 @@ export default function Reviews() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-sand p-6 md:p-8 rounded-3xl relative group"
+              className="bg-slate-50 p-6 md:p-8 rounded-3xl relative group border border-slate-100"
             >
               <Quote className="absolute top-6 right-6 w-16 h-16 text-teal/10 group-hover:text-teal/20 transition-colors" />
               
               <div className="flex gap-1 mb-8">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-coral text-coral" />
+                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                 ))}
               </div>
 

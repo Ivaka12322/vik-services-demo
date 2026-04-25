@@ -13,6 +13,7 @@ export default function Hero() {
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent"></div>
         <div className="absolute inset-0 grid-pattern opacity-10"></div>
       </div>
 
@@ -35,7 +36,7 @@ export default function Hero() {
               за вашия дом
             </h1>
             
-            <p className="text-sm md:text-base text-sand/80 mb-6 max-w-xl leading-relaxed font-medium">
+            <p className="text-sm md:text-base text-slate-300 mb-6 max-w-xl leading-relaxed font-medium">
               Квалифицирани водопроводчици с над 15 години опит. 
               Индустриални стандарти за качество при всяко посещение.
             </p>
@@ -47,7 +48,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-xl font-black text-white leading-none">10+</p>
-                  <p className="text-[10px] font-bold text-sand/60 uppercase tracking-widest">Години опит</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Години опит</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -56,7 +57,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-xl font-black text-white leading-none">500+</p>
-                  <p className="text-[10px] font-bold text-sand/60 uppercase tracking-widest">Проекта</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Проекта</p>
                 </div>
               </div>
             </div>
@@ -64,14 +65,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <a
                 href="tel:+359897777224"
-                className="bg-coral text-white px-8 py-4 rounded-full font-black text-sm tracking-widest hover:bg-teal transition-all shadow-xl flex items-center gap-3 group"
+                className="bg-accent text-white px-8 py-4 rounded-full font-black text-sm tracking-widest hover:bg-teal transition-all shadow-xl flex items-center gap-3 group"
               >
                 ПОРЪЧАЙ УСЛУГА
                 <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
               </a>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-teal animate-pulse"></div>
-                <p className="text-[10px] font-bold text-sand/60 uppercase tracking-widest">
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                   Денонощно в София
                 </p>
               </div>

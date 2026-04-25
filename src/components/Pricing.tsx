@@ -34,7 +34,7 @@ const pricingTiers = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-sand py-8 md:py-10">
+    <section id="pricing" className="bg-slate-50 py-16 md:py-24">
       <div className="container-wide px-4">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           {/* Left Side (40%) */}

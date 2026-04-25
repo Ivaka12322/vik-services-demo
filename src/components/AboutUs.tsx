@@ -25,16 +25,13 @@ const benefits = [
 
 export default function AboutUs() {
   return (
-    <section id="about" className="relative bg-sand py-8 md:py-10 overflow-hidden">
-      {/* Diagonal Divider Top */}
-      <div className="absolute top-0 left-0 right-0 h-20 bg-teal diagonal-top-teal opacity-5"></div>
-
+    <section id="about" className="relative bg-white py-16 md:py-24 overflow-hidden">
       <div className="container-wide px-4 relative z-10">
-        <div className="text-center mb-10 animate-on-scroll">
+        <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-6xl font-black text-charcoal uppercase tracking-tighter mb-4">
             ЗАЩО ДА <span className="text-teal">ИЗБЕРЕТЕ</span> НАС?
           </h2>
-          <div className="h-1 w-20 bg-coral mx-auto"></div>
+          <div className="h-1 w-20 bg-accent mx-auto"></div>
         </div>
 
         {/* Stats Grid */}
@@ -60,7 +57,7 @@ export default function AboutUs() {
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t-3 border-teal pt-8 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 mt-10">
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.title}

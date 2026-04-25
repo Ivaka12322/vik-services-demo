@@ -9,11 +9,11 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="bg-sand py-8 md:py-10 border-t-8 border-teal">
+    <section className="bg-slate-100 py-16 md:py-24">
       <div className="container-wide px-4">
         <div className="mb-10">
           <h2 className="text-3xl md:text-5xl font-black text-charcoal uppercase tracking-tighter leading-none mb-4">
-            ПРОЦЕС НА <br /><span className="text-coral">РАБОТА</span>
+            ПРОЦЕС НА <br /><span className="text-accent">РАБОТА</span>
           </h2>
           <div className="h-1.5 w-40 bg-charcoal"></div>
         </div>
@@ -26,9 +26,9 @@ export default function Process() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white p-6 md:p-8 rounded-3xl relative group hover:border-teal transition-colors border-2 border-transparent"
+              className="bg-white p-6 md:p-8 rounded-3xl relative group hover:border-teal transition-colors border-2 border-transparent shadow-sm"
             >
-              <span className="text-8xl font-black text-sand/50 absolute top-4 right-8 select-none group-hover:text-teal/10">{step.id}</span>
+              <span className="text-8xl font-black text-slate-200 absolute top-4 right-8 select-none group-hover:text-teal/20 transition-colors duration-300">{step.id}</span>
               <div className="relative z-10">
                 <h3 className="text-2xl font-black text-charcoal mb-4 uppercase tracking-tight">{step.title}</h3>
                 <p className="text-steel text-sm font-medium leading-relaxed">{step.text}</p>

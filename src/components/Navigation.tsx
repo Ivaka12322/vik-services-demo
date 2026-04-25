@@ -36,8 +36,8 @@ export default function Navigation() {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-sand/90 backdrop-blur-md border-b-3 border-teal shadow-xl py-3' 
-          : 'bg-sand border-b-3 border-teal py-5'
+          ? 'bg-slate-200/95 backdrop-blur-md border-b border-slate-300 shadow-lg py-3' 
+          : 'bg-slate-200/80 backdrop-blur-md border-b border-slate-300/50 shadow-md py-5'
       }`}
     >
       <div className="container-wide px-4 flex items-center justify-between">
@@ -48,13 +48,13 @@ export default function Navigation() {
         >
           <div className="relative w-10 h-10 flex items-center justify-center">
             <div className="absolute inset-0 bg-teal rounded-xl group-hover:rotate-45 transition-transform duration-500"></div>
-            <Droplets className="relative z-10 text-sand w-6 h-6" />
+            <Droplets className="relative z-10 text-white w-6 h-6" />
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-black text-charcoal tracking-tighter leading-none">
               ВиК СОФИЯ
             </span>
-            <span className="text-[10px] font-bold text-coral tracking-[0.2em]">ПРОФЕСИОНАЛИСТИ</span>
+            <span className="text-[10px] font-bold text-accent tracking-[0.2em]">ПРОФЕСИОНАЛИСТИ</span>
           </div>
         </div>
 
