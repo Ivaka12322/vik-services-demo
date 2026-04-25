@@ -19,7 +19,7 @@ export default function Pricing() {
   return (
     <section id="pricing" className="bg-white py-24">
       <div className="container-wide px-4">
-        <div className="mb-16 max-w-2xl">
+        <div className="mb-16 max-w-2xl mx-auto text-center">
           <span className="text-teal text-xs font-black tracking-[0.4em] mb-4 block uppercase leading-none">
             КАК РАБОТИМ
           </span>
@@ -35,7 +35,7 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl"
+          className="max-w-4xl mx-auto"
         >
           {/* Table Header */}
           <div className="flex justify-between items-end border-b-2 border-charcoal/10 pb-4 mb-4">
@@ -58,7 +58,7 @@ export default function Pricing() {
           </div>
         </motion.div>
 
-        <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-slate-100 pt-12">
+        <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-slate-100 pt-12 max-w-4xl mx-auto">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 bg-teal flex items-center justify-center rounded-xl text-white">
               <Info className="w-6 h-6" />
